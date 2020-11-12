@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        (function (win, doc) {var tid = null; function refresh() { var winWidth = doc.documentElement.clientWidth; if (winWidth > 750) { winWidth = 750 } else if (winWidth <= 320) { winWidth = 320 } size = (75 * winWidth) / 750; doc.documentElement.setAttribute("style", "font-size:" + size + "px") }; win.addEventListener('resize', function () { clearTimeout(tid); tid = setTimeout(refresh, 300) }, false); refresh() })(window, document);
+    </script>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>
